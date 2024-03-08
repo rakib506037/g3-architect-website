@@ -48,5 +48,65 @@ nav li a{
     color: #727272;
 }
 .btn-primary{
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.25rem;
+    background: #ff900e;
+    padding: 20px 25px;
+    cursor: pointer;
+    border: 0;
+}
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+
+}
+/* mobile devices */
+@media screen and (max-width:576px){
+    header{
+        padding:20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+/* tablet or medium devices */
+@media screen and (min-width:576px) and (max-width:960px){
+    nav{
+        flex-direction: column;
+    }
+    header{
+        padding:50px;
+    }
     
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* teams styles */
+.teams-container{
+    display:flex;
+    align-items: center;
+}
+.teams-img-container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:1.5rem;
+}
+.teams-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.teams-title{
+    font-size: 2.8rem;
+}
+.teams-title .quick-list{
+    color:#727272;
+    font-weight: 500;
+
+}
+.teams-title .text-features{
+    color:#ff900e;
+    font-weight: 700px;
 }
